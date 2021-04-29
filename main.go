@@ -21,7 +21,7 @@ func main() {
 			atomic.StoreInt32(cntptr, 0)
 		}
 	}(&counter)
-	
+
 	for {
 		if !limiter.Allow() {
 
